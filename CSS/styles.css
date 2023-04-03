@@ -5,6 +5,24 @@ body {
 
     }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
 h1 {
     font-size:7rem; /*when use rem ignore the inheritance font-size from parent and apply only current value 1em=16px*/
     margin:50px auto  0 auto;
